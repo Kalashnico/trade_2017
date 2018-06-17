@@ -3,11 +3,15 @@
 //
 
 #include <iostream>
+#include <zconf.h>
+#include <cmath>
 #include "Bot.hpp"
+#include "parser/Parser.hpp"
 
-Bot::Bot(int bankroll) :  _id{} , _token{}, _bankroll{bankroll}, _marketList{}, _buyList{}
+Bot::Bot() : _marketList{}
 {
-
+	_parser.getInput();
+	_marketList = _parser.getMarketList();
 }
 
 Bot::~Bot()
@@ -15,66 +19,63 @@ Bot::~Bot()
 
 }
 
-void Bot::login()
+void Bot::loop()
 {
-	//TODO GET LE JSON
-	std::string response = "\n"
-		"{\n"
-		"\"token\": \"93144b288eb1fdccbe46d6fc0f241a51766ecd3d\"\n"
-		"}";
+	auto beginTime = clock();
 
-	//TODO PARSE LE JSON
-	auto pos = response.find("token");
-	if (pos == std::string::npos)
-		throw std::invalid_argument("Token failed");
-
-	pos += 9; //To go to token first letter.
-
-	std::string loginToken{};
-
-	for (; response.at(pos) != '\"' ; ++pos) {
-		loginToken += response.at(pos);
+	while (true) {
+		if (clock() - beginTime >= 125000) {
+			break;
+		}
+		_parser.getInput();
+		_marketList = _parser.getMarketList();
+		usleep(500000);
+		if (_marketList.at(0).getData().size() >= PERIOD) {
+			_parser.parseStats();
+			_stats = _parser.getStats();
+			marketDecision(CRYPTO);
+			_parser.parseStats();
+			_stats = _parser.getStats();
+			marketDecision(RAW_MAT);
+		}
 	}
-
-	std::cout << "Token = " << loginToken << std::endl;
+	forceSell(CRYPTO);
+	forceSell(RAW_MAT);
 }
 
-void Bot::resetToken()
+void Bot::marketDecision(MarketID marketID)
 {
-	//TODO GET LE JSON
-	std::string response = "\n"
-		"{\n"
-		"\"token\": \"93144b288eb1fdccbe46d6fc0f241a51766ecd3d\"\n"
-		"}";
+	Bollinger bollinger{};
 
+	bollinger.setNumbers(_marketList.at(marketID).getData());
+	bollinger.setIndex(static_cast<int>(_marketList.at(marketID).getData().size() - 1));
+	bollinger.setPeriod(PERIOD);
+	bollinger.computeAlgorithms();
 
-	auto pos = response.find("token");
-	if (pos == std::string::npos)
-		throw std::invalid_argument("Token failed");
+	float priceUnity = _marketList.at(marketID).getLastValue();
 
-	pos += 9; //To go to token first letter.
+	float lower = bollinger.getBMoins();
+	float upper = bollinger.getBPlus();
+	bool bought = false;
 
-	std::string newToken{};
+	if (priceUnity <= _stats.getBankroll() && priceUnity + (priceUnity * 0.05) <= lower) {
+		auto quantityToBuy = static_cast<int>(floor(_stats.getBankroll() /  priceUnity));
+		std::cout << "BUY:" << quantityToBuy << ":" + getMarketString(marketID) << std::endl;
+		_lastBoughtPrice = priceUnity;
+		bought = true;
 
-	for (; response.at(pos) != '\"' ; ++pos) {
-		newToken += response.at(pos);
 	}
-
-	_token = newToken;
+	auto shares = _stats.getShares(marketID);
+	if (!bought && shares > 0) {
+		if (priceUnity >= upper - (upper * 0.20) && _lastBoughtPrice < priceUnity) {
+			std::cout << "SELL:" << shares << ":" + getMarketString(marketID) << std::endl;
+		}
+	}
 }
 
-void Bot::buy()
+void Bot::forceSell(MarketID marketID) noexcept
 {
-	//Faire l'achat;
-
-	Buy buy(1, 0, 0, 0);
-	_buyList.emplace_back(buy);
-	_bankroll -= buy.getTotalPrice();
-}
-
-int Bot::defineSoldForBuying() const noexcept
-{
-	auto buyingSold = ((10 * _bankroll) / 100) / _marketList.size();
-
-	return static_cast<int>(buyingSold);
+	auto shares = _stats.getShares(marketID);
+	if (shares > 0)
+		std::cout << "SELL:" << shares << ":" + getMarketString(marketID) << std::endl;
 }

@@ -123,6 +123,33 @@ trade_2017/fast:
 	$(MAKE) -f CMakeFiles/trade_2017.dir/build.make CMakeFiles/trade_2017.dir/build
 .PHONY : trade_2017/fast
 
+src/Bollinger.o: src/Bollinger.cpp.o
+
+.PHONY : src/Bollinger.o
+
+# target to build an object file
+src/Bollinger.cpp.o:
+	$(MAKE) -f CMakeFiles/trade_2017.dir/build.make CMakeFiles/trade_2017.dir/src/Bollinger.cpp.o
+.PHONY : src/Bollinger.cpp.o
+
+src/Bollinger.i: src/Bollinger.cpp.i
+
+.PHONY : src/Bollinger.i
+
+# target to preprocess a source file
+src/Bollinger.cpp.i:
+	$(MAKE) -f CMakeFiles/trade_2017.dir/build.make CMakeFiles/trade_2017.dir/src/Bollinger.cpp.i
+.PHONY : src/Bollinger.cpp.i
+
+src/Bollinger.s: src/Bollinger.cpp.s
+
+.PHONY : src/Bollinger.s
+
+# target to generate assembly for a file
+src/Bollinger.cpp.s:
+	$(MAKE) -f CMakeFiles/trade_2017.dir/build.make CMakeFiles/trade_2017.dir/src/Bollinger.cpp.s
+.PHONY : src/Bollinger.cpp.s
+
 src/Bot.o: src/Bot.cpp.o
 
 .PHONY : src/Bot.o
@@ -149,33 +176,6 @@ src/Bot.s: src/Bot.cpp.s
 src/Bot.cpp.s:
 	$(MAKE) -f CMakeFiles/trade_2017.dir/build.make CMakeFiles/trade_2017.dir/src/Bot.cpp.s
 .PHONY : src/Bot.cpp.s
-
-src/Buy.o: src/Buy.cpp.o
-
-.PHONY : src/Buy.o
-
-# target to build an object file
-src/Buy.cpp.o:
-	$(MAKE) -f CMakeFiles/trade_2017.dir/build.make CMakeFiles/trade_2017.dir/src/Buy.cpp.o
-.PHONY : src/Buy.cpp.o
-
-src/Buy.i: src/Buy.cpp.i
-
-.PHONY : src/Buy.i
-
-# target to preprocess a source file
-src/Buy.cpp.i:
-	$(MAKE) -f CMakeFiles/trade_2017.dir/build.make CMakeFiles/trade_2017.dir/src/Buy.cpp.i
-.PHONY : src/Buy.cpp.i
-
-src/Buy.s: src/Buy.cpp.s
-
-.PHONY : src/Buy.s
-
-# target to generate assembly for a file
-src/Buy.cpp.s:
-	$(MAKE) -f CMakeFiles/trade_2017.dir/build.make CMakeFiles/trade_2017.dir/src/Buy.cpp.s
-.PHONY : src/Buy.cpp.s
 
 src/MarketPlace.o: src/MarketPlace.cpp.o
 
@@ -204,32 +204,86 @@ src/MarketPlace.cpp.s:
 	$(MAKE) -f CMakeFiles/trade_2017.dir/build.make CMakeFiles/trade_2017.dir/src/MarketPlace.cpp.s
 .PHONY : src/MarketPlace.cpp.s
 
-src/parser/JsonParser.o: src/parser/JsonParser.cpp.o
+src/Stats.o: src/Stats.cpp.o
 
-.PHONY : src/parser/JsonParser.o
+.PHONY : src/Stats.o
 
 # target to build an object file
-src/parser/JsonParser.cpp.o:
-	$(MAKE) -f CMakeFiles/trade_2017.dir/build.make CMakeFiles/trade_2017.dir/src/parser/JsonParser.cpp.o
-.PHONY : src/parser/JsonParser.cpp.o
+src/Stats.cpp.o:
+	$(MAKE) -f CMakeFiles/trade_2017.dir/build.make CMakeFiles/trade_2017.dir/src/Stats.cpp.o
+.PHONY : src/Stats.cpp.o
 
-src/parser/JsonParser.i: src/parser/JsonParser.cpp.i
+src/Stats.i: src/Stats.cpp.i
 
-.PHONY : src/parser/JsonParser.i
+.PHONY : src/Stats.i
 
 # target to preprocess a source file
-src/parser/JsonParser.cpp.i:
-	$(MAKE) -f CMakeFiles/trade_2017.dir/build.make CMakeFiles/trade_2017.dir/src/parser/JsonParser.cpp.i
-.PHONY : src/parser/JsonParser.cpp.i
+src/Stats.cpp.i:
+	$(MAKE) -f CMakeFiles/trade_2017.dir/build.make CMakeFiles/trade_2017.dir/src/Stats.cpp.i
+.PHONY : src/Stats.cpp.i
 
-src/parser/JsonParser.s: src/parser/JsonParser.cpp.s
+src/Stats.s: src/Stats.cpp.s
 
-.PHONY : src/parser/JsonParser.s
+.PHONY : src/Stats.s
 
 # target to generate assembly for a file
-src/parser/JsonParser.cpp.s:
-	$(MAKE) -f CMakeFiles/trade_2017.dir/build.make CMakeFiles/trade_2017.dir/src/parser/JsonParser.cpp.s
-.PHONY : src/parser/JsonParser.cpp.s
+src/Stats.cpp.s:
+	$(MAKE) -f CMakeFiles/trade_2017.dir/build.make CMakeFiles/trade_2017.dir/src/Stats.cpp.s
+.PHONY : src/Stats.cpp.s
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/trade_2017.dir/build.make CMakeFiles/trade_2017.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/trade_2017.dir/build.make CMakeFiles/trade_2017.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/trade_2017.dir/build.make CMakeFiles/trade_2017.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+src/parser/Parser.o: src/parser/Parser.cpp.o
+
+.PHONY : src/parser/Parser.o
+
+# target to build an object file
+src/parser/Parser.cpp.o:
+	$(MAKE) -f CMakeFiles/trade_2017.dir/build.make CMakeFiles/trade_2017.dir/src/parser/Parser.cpp.o
+.PHONY : src/parser/Parser.cpp.o
+
+src/parser/Parser.i: src/parser/Parser.cpp.i
+
+.PHONY : src/parser/Parser.i
+
+# target to preprocess a source file
+src/parser/Parser.cpp.i:
+	$(MAKE) -f CMakeFiles/trade_2017.dir/build.make CMakeFiles/trade_2017.dir/src/parser/Parser.cpp.i
+.PHONY : src/parser/Parser.cpp.i
+
+src/parser/Parser.s: src/parser/Parser.cpp.s
+
+.PHONY : src/parser/Parser.s
+
+# target to generate assembly for a file
+src/parser/Parser.cpp.s:
+	$(MAKE) -f CMakeFiles/trade_2017.dir/build.make CMakeFiles/trade_2017.dir/src/parser/Parser.cpp.s
+.PHONY : src/parser/Parser.cpp.s
 
 # Help Target
 help:
@@ -240,18 +294,24 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... trade_2017"
+	@echo "... src/Bollinger.o"
+	@echo "... src/Bollinger.i"
+	@echo "... src/Bollinger.s"
 	@echo "... src/Bot.o"
 	@echo "... src/Bot.i"
 	@echo "... src/Bot.s"
-	@echo "... src/Buy.o"
-	@echo "... src/Buy.i"
-	@echo "... src/Buy.s"
 	@echo "... src/MarketPlace.o"
 	@echo "... src/MarketPlace.i"
 	@echo "... src/MarketPlace.s"
-	@echo "... src/parser/JsonParser.o"
-	@echo "... src/parser/JsonParser.i"
-	@echo "... src/parser/JsonParser.s"
+	@echo "... src/Stats.o"
+	@echo "... src/Stats.i"
+	@echo "... src/Stats.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/parser/Parser.o"
+	@echo "... src/parser/Parser.i"
+	@echo "... src/parser/Parser.s"
 .PHONY : help
 
 

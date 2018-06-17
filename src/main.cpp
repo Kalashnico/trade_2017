@@ -6,7 +6,9 @@
 
 int main()
 {
-	Bot bot;
-	bot.login();
+	Bot bot{};
+	std::cout << "STATS" << std::endl;
+	bot.loop();
+
 	return 0;
 }

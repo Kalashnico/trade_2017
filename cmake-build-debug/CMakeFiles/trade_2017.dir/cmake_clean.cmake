@@ -1,8 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/trade_2017.dir/src/main.cpp.o"
   "CMakeFiles/trade_2017.dir/src/Bot.cpp.o"
-  "CMakeFiles/trade_2017.dir/src/Buy.cpp.o"
+  "CMakeFiles/trade_2017.dir/src/Stats.cpp.o"
+  "CMakeFiles/trade_2017.dir/src/Bollinger.cpp.o"
   "CMakeFiles/trade_2017.dir/src/MarketPlace.cpp.o"
-  "CMakeFiles/trade_2017.dir/src/parser/JsonParser.cpp.o"
+  "CMakeFiles/trade_2017.dir/src/parser/Parser.cpp.o"
   "trade_2017.pdb"
   "trade_2017"
 )

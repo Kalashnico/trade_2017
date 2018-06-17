@@ -13,6 +13,9 @@ CFLAGS	+= -Wall -Wextra -W
 
 SRC	= src/Bot.cpp \
       src/MarketPlace.cpp   \
+      src/parser/Parser.cpp \
+      src/Bollinger.cpp \
+      src/Stats.cpp \
       src/main.cpp
 
 OBJ	= $(SRC:.cpp=.o)

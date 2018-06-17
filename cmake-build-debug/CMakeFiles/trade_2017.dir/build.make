@@ -57,9 +57,33 @@ include CMakeFiles/trade_2017.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/trade_2017.dir/flags.make
 
+CMakeFiles/trade_2017.dir/src/main.cpp.o: CMakeFiles/trade_2017.dir/flags.make
+CMakeFiles/trade_2017.dir/src/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/trade_2017.dir/src/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/trade_2017.dir/src/main.cpp.o -c /Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/main.cpp
+
+CMakeFiles/trade_2017.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/trade_2017.dir/src/main.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/main.cpp > CMakeFiles/trade_2017.dir/src/main.cpp.i
+
+CMakeFiles/trade_2017.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/trade_2017.dir/src/main.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/main.cpp -o CMakeFiles/trade_2017.dir/src/main.cpp.s
+
+CMakeFiles/trade_2017.dir/src/main.cpp.o.requires:
+
+.PHONY : CMakeFiles/trade_2017.dir/src/main.cpp.o.requires
+
+CMakeFiles/trade_2017.dir/src/main.cpp.o.provides: CMakeFiles/trade_2017.dir/src/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/trade_2017.dir/build.make CMakeFiles/trade_2017.dir/src/main.cpp.o.provides.build
+.PHONY : CMakeFiles/trade_2017.dir/src/main.cpp.o.provides
+
+CMakeFiles/trade_2017.dir/src/main.cpp.o.provides.build: CMakeFiles/trade_2017.dir/src/main.cpp.o
+
+
 CMakeFiles/trade_2017.dir/src/Bot.cpp.o: CMakeFiles/trade_2017.dir/flags.make
 CMakeFiles/trade_2017.dir/src/Bot.cpp.o: ../src/Bot.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/trade_2017.dir/src/Bot.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/trade_2017.dir/src/Bot.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/trade_2017.dir/src/Bot.cpp.o -c /Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/Bot.cpp
 
 CMakeFiles/trade_2017.dir/src/Bot.cpp.i: cmake_force
@@ -81,33 +105,57 @@ CMakeFiles/trade_2017.dir/src/Bot.cpp.o.provides: CMakeFiles/trade_2017.dir/src/
 CMakeFiles/trade_2017.dir/src/Bot.cpp.o.provides.build: CMakeFiles/trade_2017.dir/src/Bot.cpp.o
 
 
-CMakeFiles/trade_2017.dir/src/Buy.cpp.o: CMakeFiles/trade_2017.dir/flags.make
-CMakeFiles/trade_2017.dir/src/Buy.cpp.o: ../src/Buy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/trade_2017.dir/src/Buy.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/trade_2017.dir/src/Buy.cpp.o -c /Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/Buy.cpp
+CMakeFiles/trade_2017.dir/src/Stats.cpp.o: CMakeFiles/trade_2017.dir/flags.make
+CMakeFiles/trade_2017.dir/src/Stats.cpp.o: ../src/Stats.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/trade_2017.dir/src/Stats.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/trade_2017.dir/src/Stats.cpp.o -c /Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/Stats.cpp
 
-CMakeFiles/trade_2017.dir/src/Buy.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/trade_2017.dir/src/Buy.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/Buy.cpp > CMakeFiles/trade_2017.dir/src/Buy.cpp.i
+CMakeFiles/trade_2017.dir/src/Stats.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/trade_2017.dir/src/Stats.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/Stats.cpp > CMakeFiles/trade_2017.dir/src/Stats.cpp.i
 
-CMakeFiles/trade_2017.dir/src/Buy.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/trade_2017.dir/src/Buy.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/Buy.cpp -o CMakeFiles/trade_2017.dir/src/Buy.cpp.s
+CMakeFiles/trade_2017.dir/src/Stats.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/trade_2017.dir/src/Stats.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/Stats.cpp -o CMakeFiles/trade_2017.dir/src/Stats.cpp.s
 
-CMakeFiles/trade_2017.dir/src/Buy.cpp.o.requires:
+CMakeFiles/trade_2017.dir/src/Stats.cpp.o.requires:
 
-.PHONY : CMakeFiles/trade_2017.dir/src/Buy.cpp.o.requires
+.PHONY : CMakeFiles/trade_2017.dir/src/Stats.cpp.o.requires
 
-CMakeFiles/trade_2017.dir/src/Buy.cpp.o.provides: CMakeFiles/trade_2017.dir/src/Buy.cpp.o.requires
-	$(MAKE) -f CMakeFiles/trade_2017.dir/build.make CMakeFiles/trade_2017.dir/src/Buy.cpp.o.provides.build
-.PHONY : CMakeFiles/trade_2017.dir/src/Buy.cpp.o.provides
+CMakeFiles/trade_2017.dir/src/Stats.cpp.o.provides: CMakeFiles/trade_2017.dir/src/Stats.cpp.o.requires
+	$(MAKE) -f CMakeFiles/trade_2017.dir/build.make CMakeFiles/trade_2017.dir/src/Stats.cpp.o.provides.build
+.PHONY : CMakeFiles/trade_2017.dir/src/Stats.cpp.o.provides
 
-CMakeFiles/trade_2017.dir/src/Buy.cpp.o.provides.build: CMakeFiles/trade_2017.dir/src/Buy.cpp.o
+CMakeFiles/trade_2017.dir/src/Stats.cpp.o.provides.build: CMakeFiles/trade_2017.dir/src/Stats.cpp.o
+
+
+CMakeFiles/trade_2017.dir/src/Bollinger.cpp.o: CMakeFiles/trade_2017.dir/flags.make
+CMakeFiles/trade_2017.dir/src/Bollinger.cpp.o: ../src/Bollinger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/trade_2017.dir/src/Bollinger.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/trade_2017.dir/src/Bollinger.cpp.o -c /Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/Bollinger.cpp
+
+CMakeFiles/trade_2017.dir/src/Bollinger.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/trade_2017.dir/src/Bollinger.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/Bollinger.cpp > CMakeFiles/trade_2017.dir/src/Bollinger.cpp.i
+
+CMakeFiles/trade_2017.dir/src/Bollinger.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/trade_2017.dir/src/Bollinger.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/Bollinger.cpp -o CMakeFiles/trade_2017.dir/src/Bollinger.cpp.s
+
+CMakeFiles/trade_2017.dir/src/Bollinger.cpp.o.requires:
+
+.PHONY : CMakeFiles/trade_2017.dir/src/Bollinger.cpp.o.requires
+
+CMakeFiles/trade_2017.dir/src/Bollinger.cpp.o.provides: CMakeFiles/trade_2017.dir/src/Bollinger.cpp.o.requires
+	$(MAKE) -f CMakeFiles/trade_2017.dir/build.make CMakeFiles/trade_2017.dir/src/Bollinger.cpp.o.provides.build
+.PHONY : CMakeFiles/trade_2017.dir/src/Bollinger.cpp.o.provides
+
+CMakeFiles/trade_2017.dir/src/Bollinger.cpp.o.provides.build: CMakeFiles/trade_2017.dir/src/Bollinger.cpp.o
 
 
 CMakeFiles/trade_2017.dir/src/MarketPlace.cpp.o: CMakeFiles/trade_2017.dir/flags.make
 CMakeFiles/trade_2017.dir/src/MarketPlace.cpp.o: ../src/MarketPlace.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/trade_2017.dir/src/MarketPlace.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/trade_2017.dir/src/MarketPlace.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/trade_2017.dir/src/MarketPlace.cpp.o -c /Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/MarketPlace.cpp
 
 CMakeFiles/trade_2017.dir/src/MarketPlace.cpp.i: cmake_force
@@ -129,47 +177,51 @@ CMakeFiles/trade_2017.dir/src/MarketPlace.cpp.o.provides: CMakeFiles/trade_2017.
 CMakeFiles/trade_2017.dir/src/MarketPlace.cpp.o.provides.build: CMakeFiles/trade_2017.dir/src/MarketPlace.cpp.o
 
 
-CMakeFiles/trade_2017.dir/src/parser/JsonParser.cpp.o: CMakeFiles/trade_2017.dir/flags.make
-CMakeFiles/trade_2017.dir/src/parser/JsonParser.cpp.o: ../src/parser/JsonParser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/trade_2017.dir/src/parser/JsonParser.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/trade_2017.dir/src/parser/JsonParser.cpp.o -c /Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/parser/JsonParser.cpp
+CMakeFiles/trade_2017.dir/src/parser/Parser.cpp.o: CMakeFiles/trade_2017.dir/flags.make
+CMakeFiles/trade_2017.dir/src/parser/Parser.cpp.o: ../src/parser/Parser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/trade_2017.dir/src/parser/Parser.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/trade_2017.dir/src/parser/Parser.cpp.o -c /Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/parser/Parser.cpp
 
-CMakeFiles/trade_2017.dir/src/parser/JsonParser.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/trade_2017.dir/src/parser/JsonParser.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/parser/JsonParser.cpp > CMakeFiles/trade_2017.dir/src/parser/JsonParser.cpp.i
+CMakeFiles/trade_2017.dir/src/parser/Parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/trade_2017.dir/src/parser/Parser.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/parser/Parser.cpp > CMakeFiles/trade_2017.dir/src/parser/Parser.cpp.i
 
-CMakeFiles/trade_2017.dir/src/parser/JsonParser.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/trade_2017.dir/src/parser/JsonParser.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/parser/JsonParser.cpp -o CMakeFiles/trade_2017.dir/src/parser/JsonParser.cpp.s
+CMakeFiles/trade_2017.dir/src/parser/Parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/trade_2017.dir/src/parser/Parser.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/parser/Parser.cpp -o CMakeFiles/trade_2017.dir/src/parser/Parser.cpp.s
 
-CMakeFiles/trade_2017.dir/src/parser/JsonParser.cpp.o.requires:
+CMakeFiles/trade_2017.dir/src/parser/Parser.cpp.o.requires:
 
-.PHONY : CMakeFiles/trade_2017.dir/src/parser/JsonParser.cpp.o.requires
+.PHONY : CMakeFiles/trade_2017.dir/src/parser/Parser.cpp.o.requires
 
-CMakeFiles/trade_2017.dir/src/parser/JsonParser.cpp.o.provides: CMakeFiles/trade_2017.dir/src/parser/JsonParser.cpp.o.requires
-	$(MAKE) -f CMakeFiles/trade_2017.dir/build.make CMakeFiles/trade_2017.dir/src/parser/JsonParser.cpp.o.provides.build
-.PHONY : CMakeFiles/trade_2017.dir/src/parser/JsonParser.cpp.o.provides
+CMakeFiles/trade_2017.dir/src/parser/Parser.cpp.o.provides: CMakeFiles/trade_2017.dir/src/parser/Parser.cpp.o.requires
+	$(MAKE) -f CMakeFiles/trade_2017.dir/build.make CMakeFiles/trade_2017.dir/src/parser/Parser.cpp.o.provides.build
+.PHONY : CMakeFiles/trade_2017.dir/src/parser/Parser.cpp.o.provides
 
-CMakeFiles/trade_2017.dir/src/parser/JsonParser.cpp.o.provides.build: CMakeFiles/trade_2017.dir/src/parser/JsonParser.cpp.o
+CMakeFiles/trade_2017.dir/src/parser/Parser.cpp.o.provides.build: CMakeFiles/trade_2017.dir/src/parser/Parser.cpp.o
 
 
 # Object files for target trade_2017
 trade_2017_OBJECTS = \
+"CMakeFiles/trade_2017.dir/src/main.cpp.o" \
 "CMakeFiles/trade_2017.dir/src/Bot.cpp.o" \
-"CMakeFiles/trade_2017.dir/src/Buy.cpp.o" \
+"CMakeFiles/trade_2017.dir/src/Stats.cpp.o" \
+"CMakeFiles/trade_2017.dir/src/Bollinger.cpp.o" \
 "CMakeFiles/trade_2017.dir/src/MarketPlace.cpp.o" \
-"CMakeFiles/trade_2017.dir/src/parser/JsonParser.cpp.o"
+"CMakeFiles/trade_2017.dir/src/parser/Parser.cpp.o"
 
 # External object files for target trade_2017
 trade_2017_EXTERNAL_OBJECTS =
 
+trade_2017: CMakeFiles/trade_2017.dir/src/main.cpp.o
 trade_2017: CMakeFiles/trade_2017.dir/src/Bot.cpp.o
-trade_2017: CMakeFiles/trade_2017.dir/src/Buy.cpp.o
+trade_2017: CMakeFiles/trade_2017.dir/src/Stats.cpp.o
+trade_2017: CMakeFiles/trade_2017.dir/src/Bollinger.cpp.o
 trade_2017: CMakeFiles/trade_2017.dir/src/MarketPlace.cpp.o
-trade_2017: CMakeFiles/trade_2017.dir/src/parser/JsonParser.cpp.o
+trade_2017: CMakeFiles/trade_2017.dir/src/parser/Parser.cpp.o
 trade_2017: CMakeFiles/trade_2017.dir/build.make
 trade_2017: CMakeFiles/trade_2017.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable trade_2017"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable trade_2017"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/trade_2017.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -177,10 +229,12 @@ CMakeFiles/trade_2017.dir/build: trade_2017
 
 .PHONY : CMakeFiles/trade_2017.dir/build
 
+CMakeFiles/trade_2017.dir/requires: CMakeFiles/trade_2017.dir/src/main.cpp.o.requires
 CMakeFiles/trade_2017.dir/requires: CMakeFiles/trade_2017.dir/src/Bot.cpp.o.requires
-CMakeFiles/trade_2017.dir/requires: CMakeFiles/trade_2017.dir/src/Buy.cpp.o.requires
+CMakeFiles/trade_2017.dir/requires: CMakeFiles/trade_2017.dir/src/Stats.cpp.o.requires
+CMakeFiles/trade_2017.dir/requires: CMakeFiles/trade_2017.dir/src/Bollinger.cpp.o.requires
 CMakeFiles/trade_2017.dir/requires: CMakeFiles/trade_2017.dir/src/MarketPlace.cpp.o.requires
-CMakeFiles/trade_2017.dir/requires: CMakeFiles/trade_2017.dir/src/parser/JsonParser.cpp.o.requires
+CMakeFiles/trade_2017.dir/requires: CMakeFiles/trade_2017.dir/src/parser/Parser.cpp.o.requires
 
 .PHONY : CMakeFiles/trade_2017.dir/requires
 

@@ -4,4 +4,13 @@
 
 #include "MarketPlace.hpp"
 
-MarketPlace::MarketPlace() {}
+#include <utility>
+
+MarketPlace::MarketPlace(MarketID id, std::string name) : _id{id}, _name{std::move(name )}, _data{}
+{
+}
+
+MarketPlace::~MarketPlace()
+{
+
+}

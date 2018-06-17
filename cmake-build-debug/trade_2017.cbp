@@ -82,16 +82,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/Bollinger.cpp">
+			<Option target="trade_2017"/>
+		</Unit>
+		<Unit filename="/Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/Bollinger.hpp">
+			<Option target="trade_2017"/>
+		</Unit>
 		<Unit filename="/Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/Bot.cpp">
 			<Option target="trade_2017"/>
 		</Unit>
 		<Unit filename="/Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/Bot.hpp">
-			<Option target="trade_2017"/>
-		</Unit>
-		<Unit filename="/Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/Buy.cpp">
-			<Option target="trade_2017"/>
-		</Unit>
-		<Unit filename="/Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/Buy.hpp">
 			<Option target="trade_2017"/>
 		</Unit>
 		<Unit filename="/Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/MarketPlace.cpp">
@@ -100,10 +100,19 @@
 		<Unit filename="/Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/MarketPlace.hpp">
 			<Option target="trade_2017"/>
 		</Unit>
-		<Unit filename="/Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/parser/JsonParser.cpp">
+		<Unit filename="/Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/Stats.cpp">
 			<Option target="trade_2017"/>
 		</Unit>
-		<Unit filename="/Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/parser/JsonParser.hpp">
+		<Unit filename="/Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/Stats.hpp">
+			<Option target="trade_2017"/>
+		</Unit>
+		<Unit filename="/Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/main.cpp">
+			<Option target="trade_2017"/>
+		</Unit>
+		<Unit filename="/Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/parser/Parser.cpp">
+			<Option target="trade_2017"/>
+		</Unit>
+		<Unit filename="/Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/src/parser/Parser.hpp">
 			<Option target="trade_2017"/>
 		</Unit>
 		<Unit filename="/Users/nicolasguerin/Workspace/School/Tek2/Trade/trade_2017/CMakeLists.txt">

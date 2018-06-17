@@ -8,27 +8,38 @@
 #include <vector>
 #include <queue>
 #include "MarketPlace.hpp"
-#include "Buy.hpp"
+#include "parser/Parser.hpp"
+#include "Stats.hpp"
+#include "Bollinger.hpp"
+
+#define PERIOD 20
 
 class Bot {
 	public:
-		explicit Bot(int bkroll = 10000);
+		Bot();
 		~Bot();
 
 		//Interaction functions
-		void	login();
-		void	resetToken();
-		void pull();
-		void buy();
-		void sell();
-		int defineSoldForBuying() const noexcept ;
+		void loop();
+		void marketDecision(MarketID marketID);
+
+		MarketPlace getMarket(MarketID marketID) {
+			for (auto const &market : _marketList) {
+				if (marketID == market.getId())
+					return market;
+
+			}
+			return _marketList.at(0);
+		}
 
 
 
 	private:
-		int 	_id;
-		std::string _token;
-		int	_bankroll;
 		std::vector<MarketPlace> _marketList;
-		std::vector<Buy>	_buyList;
+		Parser			_parser;
+		Stats			_stats;
+		Bollinger		_algorithm;
+		float 			_lastBoughtPrice;
+
+		void forceSell(MarketID marketID) noexcept;
 };
