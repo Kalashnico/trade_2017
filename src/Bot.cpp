@@ -24,7 +24,7 @@ void Bot::loop()
 	auto beginTime = clock();
 
 	while (true) {
-		if (clock() - beginTime >= 125000) {
+		if (clock() - beginTime >= 130000) {
 			break;
 		}
 		_parser.getInput();
