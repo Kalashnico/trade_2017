@@ -41,6 +41,7 @@ class MarketPlace {
 		float	getLastValue() const noexcept {
 			if (!_data.empty())
 				return _data.back();
+			return 0.0;
 		}
 
 		void	setData(float value) noexcept {

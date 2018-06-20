@@ -9,7 +9,6 @@ RM	= rm -f
 CC	= g++
 
 CFLAGS	= -I include -std=c++1z
-CFLAGS	+= -Wall -Wextra -W
 
 SRC	= src/Bot.cpp \
       src/MarketPlace.cpp   \
