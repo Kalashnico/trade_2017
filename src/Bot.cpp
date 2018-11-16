@@ -33,14 +33,15 @@ void Bot::loop()
 		if (_marketList.at(0).getData().size() >= PERIOD) {
 			_parser.parseStats();
 			_stats = _parser.getStats();
-			marketDecision(CRYPTO);
+			marketDecision(FOREX);
 			_parser.parseStats();
 			_stats = _parser.getStats();
-			marketDecision(RAW_MAT);
+			marketDecision(STOCK_EX);
 		}
 	}
 	forceSell(CRYPTO);
 	forceSell(RAW_MAT);
+	std::cout << "EXIT" << std::endl;
 }
 
 void Bot::marketDecision(MarketID marketID)

@@ -2,13 +2,14 @@
 ##  Created by Nicolas.
 ##
 
-NAME	= trade_bordeaux_$
+NAME = trade
 
 RM	= rm -f
 
 CC	= g++
 
 CFLAGS	= -I include -std=c++1z
+CFLAGS = -W -Wall -Wextra
 
 SRC	= src/Bot.cpp \
       src/MarketPlace.cpp   \
